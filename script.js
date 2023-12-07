@@ -2,6 +2,7 @@
 const counterElement = document.getElementById('counter');
     const incrementButton = document.getElementById('incrementBtn');
 
+	counterElement.textContent = 0;
     // Set the initial value of the counter
     let counterValue = 0;
 
