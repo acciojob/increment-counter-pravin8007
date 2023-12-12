@@ -2,7 +2,7 @@
 const counterElement = document.getElementById('counter');
     const incrementButton = document.getElementById('incrementBtn');
 
-	counterElement.textContent = 0;
+	counterElement.textContent = counterElement.innerText;
     let counterValue = 0;
 
     function handleIncrement() {
