@@ -2,16 +2,15 @@
 const counterElement = document.getElementById('counter');
     const incrementButton = document.getElementById('incrementBtn');
 
-	counterElement.innerText = 0;
+	counterElement.textContent = 0;
     let counterValue = 0;
-
 
     function handleIncrement() {
 		
       alert(counterValue);
-		 counterElement.innerText = counterValue;
+      counterElement.textContent = counterValue;
       counterValue++;
-     
+		 counterElement.textContent = counterValue;
     }
 
 
