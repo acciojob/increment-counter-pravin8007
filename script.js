@@ -1,16 +1,16 @@
- function incrementCounter() {
-      // Get the current value of the counter
-      var counterValue = document.getElementById("counter").innerText;
+//your JS code here. If required.
+const counterElement = document.getElementById('counter');
+    const incrementButton = document.getElementById('incrementBtn');
 
-      // Display an alert with the un-incremented value
+	counterElement.textContent = counterElement.innerText;
+    let counterValue = 0;
+
+    function handleIncrement() {
+		
       alert(counterValue);
-
-      // Increment the counter value by 1
-      counterValue = parseInt(counterValue) + 1;
-
-      // Update the counter value on the webpage
-      document.getElementById("counter").innerText = counterValue;
+      const value =  parseInt(counterValue)+1;
+		 counterElement.textContent = value;
     }
 
-const increment = document.getElementById("incrementBtn");
-increment.addEventListener("click", incrementCounter);
+
+    incrementButton.addEventListener('click', handleIncrement);
