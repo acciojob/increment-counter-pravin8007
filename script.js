@@ -6,11 +6,11 @@ const counterElement = document.getElementById('counter');
     let counterValue = 0;
 
     function handleIncrement() {
+
+		   counterValue = parseInt(counterValue) + 1;
+	  counterElement.textContent = counterValue;
 		
-      alert(counterValue)
-		   // counterElement.textContent = counterValue;
-      counterValue = parseInt(counterValue) + 1;
-		 counterElement.textContent = counterValue;
+      alert(counterValue);
 		 
     }
 
