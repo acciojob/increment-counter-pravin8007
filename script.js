@@ -7,8 +7,8 @@ const counterElement = document.getElementById('counter');
     function handleIncrement() {
     
 		const currentValue = parseInt(counterElement.innerText);
-		alert(currentValue);
-		  const incrementedValue = currentValue + 1;
+			  const incrementedValue = currentValue + 1;
+		alert(incrementedValue);
 		  counterElement.innerText = incrementedValue;
     }
 
