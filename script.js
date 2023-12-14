@@ -8,7 +8,7 @@ const counterElement = document.getElementById('counter');
     function handleIncrement() {
 		
       alert(counterValue)
-		   counterElement.textContent = counterValue;
+		   // counterElement.textContent = counterValue;
       counterValue = parseInt(counterValue) + 1;
 		 counterElement.textContent = counterValue;
 		 
