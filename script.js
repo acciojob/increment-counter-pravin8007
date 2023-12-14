@@ -2,16 +2,14 @@
 const counterElement = document.getElementById('counter');
     const incrementButton = document.getElementById('incrementBtn');
 
-	counterElement.textContent = counterElement.innerText;
-    let counterValue = 0;
+	
 
     function handleIncrement() {
-
-		   counterValue = parseInt(counterValue) + 1;
-	  counterElement.textContent = counterValue;
-		
-      alert(counterValue);
-		 
+    
+		const currentValue = parseInt(counterElement.innerText);
+		alert(currentValue);
+		  const incrementedValue = currentValue + 1;
+		  counterElement.innerText = incrementedValue;
     }
 
 
