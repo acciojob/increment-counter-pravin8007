@@ -5,10 +5,10 @@ let counterElement = document.getElementById('counter');
 	counterElement.value = 0;
     function handleIncrement() {
 		const currentValue = parseInt(counterElement.innerText);
+		alert(currentValue);
 		const incrementedValue = currentValue + 1;
-		alert(incrementedValue);
 		  counterElement.innerText = incrementedValue;
     }
 
 
-    incrementButton.addEventListener('click', handleIncrement);
+    incrementButton.addEventListener('click', handleIncrement); 
