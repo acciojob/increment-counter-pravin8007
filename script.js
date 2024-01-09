@@ -5,7 +5,7 @@ let counterElement = document.getElementById('counter');
 	counterElement.value = 0;
     function handleIncrement() {
 		const currentValue = parseInt(counterElement.innerText);
-		alert(currentValue);
+		alert(counterElement.innerText);
 		const incrementedValue = currentValue + 1;
 		  counterElement.innerText = incrementedValue;
     }
